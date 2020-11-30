@@ -1,0 +1,34 @@
+{
+  "name": "nth-stock",
+  "version": "1.0.0",
+  "main": "main.js",
+  "private": true,
+  "author": "nthung2112@gmail.com",
+  "description": "NTH stock in tray",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder build --mac"
+  },
+  "devDependencies": {
+    "electron": "^11.0.3",
+    "electron-builder": "^22.9.1"
+  },
+  "build": {
+    "productName": "NTH Stock",
+    "appId": "nth.stock",
+    "mac": {
+      "category": "nth.app.stock",
+      "icon": "assets/stock.png",
+      "darkModeSupport": true
+    },
+    "extraFiles": [
+      {
+        "from": "assets",
+        "to": "resources",
+        "filter": [
+          "**/*"
+        ]
+      }
+    ]
+  }
+}
