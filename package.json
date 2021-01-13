@@ -10,8 +10,8 @@
     "build": "electron-builder build --mac"
   },
   "devDependencies": {
-    "electron": "^11.0.3",
-    "electron-builder": "^22.9.1"
+    "electron": "lastest",
+    "electron-builder": "lastest"
   },
   "build": {
     "productName": "NTH Stock",
@@ -19,7 +19,11 @@
     "mac": {
       "category": "nth.app.stock",
       "icon": "assets/stock.png",
-      "darkModeSupport": true
+      "darkModeSupport": true,
+      "target": "dmg",
+      "electronLanguages": [
+        "en"
+      ]
     },
     "extraFiles": [
       {
